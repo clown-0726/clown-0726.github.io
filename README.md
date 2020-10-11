@@ -3,3 +3,6 @@
 
 ### Start project
 - hexo server
+
+### ENV
+- node 12.x
