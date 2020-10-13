@@ -78,15 +78,27 @@ menu:
   - page: home
     directory: .
     icon: fa-home
-  - page: archive
+  # - page: archive
+  #   directory: archives/
+  #   icon: fa-archive
+  - page: code_monkey_note
     directory: archives/
-    icon: fa-archive
+    icon: fa-bug
+  - page: reading_node
+    directory: archives1/
+    icon: fa-bookmark
+  - page: photo_say
+    directory: archives2/
+    icon: fa-camera
+  - page: mess_talk
+    directory: archives3/
+    icon: fa-beer
   - page: about
     directory: about/
     icon: fa-user
-  - page: rss
-    directory: atom.xml
-    icon: fa-rss
+  # - page: rss
+  #   directory: atom.xml
+  #   icon: fa-rss
 
 widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
   - search
