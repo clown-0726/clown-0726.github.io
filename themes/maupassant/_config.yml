@@ -85,7 +85,7 @@ menu:
     directory: archives/
     icon: fa-bug
   - page: reading_node
-    directory: archives1/
+    directory: categories/
     icon: fa-bookmark
   - page: photo_say
     directory: archives2/
@@ -109,12 +109,12 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
   - links
 
 links:
-  - title: site-name1
-    url: http://www.example1.com/
-  - title: site-name2
-    url: http://www.example2.com/
-  - title: site-name3
-    url: http://www.example3.com/
+  - title: GITHUB
+    url: https://github.com/clown-0726?tab=repositories
+  - title: Orbit Financial Technology
+    url: https://www.orbitfin.ai/
+  - title: 阮一峰
+    url: http://www.ruanyifeng.com/home.html
 
 timeline:
   - num: 1
