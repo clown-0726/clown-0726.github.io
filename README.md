@@ -14,3 +14,27 @@
 
 ##### 部署博客到阿里云oss
 - https://www.jianshu.com/p/99952652b2dd
+
+### 文章分类
+- 码农笔记     Coding
+- 读书笔记     Reading
+- 摄影说       Photography
+- 杂谈         Tittle-tattle
+
+### 文章标签
+- 好文
+- 读书
+- 摄影
+- WEB
+- 后端
+- Python
+- Javascript
+- DB
+- AWS
+- 杂谈
+- 随笔
+- VUE
+- React
+
+### Others
+- You can control the abstract of a post shown at index, by either filling a description: item in front-matter of the post.md, or just inserting a <!--more--> before your hidden content.
