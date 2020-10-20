@@ -31,3 +31,12 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: main  # deploying branch
+      - uses: manyuanrong/setup-ossutil@v1.0
+        with:
+          # endpoint 可以去oss控制台上查看
+          endpoint: "oss-cn-beijing.aliyuncs.com"
+          # 使用我们之前配置在secrets里面的accesskeys来配置ossutil
+          access-key-id: ${{ secrets.ACCESS_KEY_ID }}
+          access-key-secret: ${{ secrets.ACCESS_KEY_SECRET }}
+      - name: Deply To OSS
+        run: ossutil cp public oss://lilu-blog/ -rf
