@@ -13,7 +13,8 @@
 - https://github.com/iissnan/hexo-theme-next/wiki/%E5%88%9B%E5%BB%BA%E5%88%86%E7%B1%BB%E9%A1%B5%E9%9D%A2
 
 ##### 部署博客到阿里云oss
-- https://www.jianshu.com/p/99952652b2dd
+- https://www.jianshu.com/p/99952652b2dd (推荐)
+- http://zengwu.com.cn/p/dd7e8a7b.html
 
 ### 文章分类
 - 码农笔记     Coding
