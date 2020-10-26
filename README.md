@@ -21,6 +21,7 @@
 - 读书笔记     Reading
 - 摄影说       Photography
 - 杂谈         Tittle-tattle
+- Snippet
 
 ### 文章标签
 - 好文
@@ -36,6 +37,7 @@
 - 随笔
 - VUE
 - React
+- Snippet
 
 ### Others
 - You can control the abstract of a post shown at index, by either filling a description: item in front-matter of the post.md, or just inserting a <!--more--> before your hidden content.
