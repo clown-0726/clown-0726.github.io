@@ -103,4 +103,10 @@ theme: maupassant
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: sftp
+  host: 47.105.63.161
+  user: root
+  remotePath: /var/www/html/
+  port: 22
+  privateKey: /Users/crown/Documents/aws/MMP1-ALIYUN.pem
+  agent: $SSH_AUTH_SOCK

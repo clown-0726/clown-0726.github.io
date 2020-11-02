@@ -1,3 +1,6 @@
+### Aliyun path
+- http://lilu-blog.oss-cn-beijing.aliyuncs.com/
+
 ### Theme Refer
 - https://github.com/tufu9441/maupassant-hexo
 
