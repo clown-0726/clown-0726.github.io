@@ -12,6 +12,8 @@ tags:
 
 <!--more-->
 
+![没有绝对的产品](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/chanpin_tezheng.jpg)
+
 ## 必须了解的知识
 
 - 8位二进制位是一个字节
@@ -26,7 +28,7 @@ tags:
 
 话不多说，直接上图：
 
-![xxx](https://s1.ax1x.com/2020/10/15/07Ao11.png)
+![各种编码之间的转换是通过unicode作桥梁的](https://s1.ax1x.com/2020/10/15/07Ao11.png)
 
 从上图我们可以看出，可以把 unicode 编码作为一种中间编码来看待，其他编码可以通过 unicode 进行相互转化。当一种编码转成 unicode 编码的过程我们叫 decode，当把 unicode 转成一种特定的编码的过程我们叫 encode。由于 unicode 是定长的，因此在程序编码的时候一般会使用 unicode 作为程序的默认编码形式（python2.7 除外）
 

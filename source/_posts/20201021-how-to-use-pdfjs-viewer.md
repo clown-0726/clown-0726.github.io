@@ -12,6 +12,8 @@ tags:
 
 <!--more-->
 
+![努力+不要脸=人生赢家](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/buyaolian_qinfen_renshengyingjia.jpg)
+
 在做调研的过程中，用的比较多的，发现一共有三种基本方案。第一种是直接通过浏览器来预览。这种方案非常依赖于浏览器及其版本，因此不推荐。第二种是使用 Google 的 online docs viewer，但是在国内没有良好的体验，并且定制行不强。剩下的就是 pdf.js。pdf.js 基本可以满足项目中的基础使用，因此也是最好的选择。
 
 我们可以在 github 中找到这个项目。https://github.com/mozilla/pdf.js/ 。但是官网的文旦写的有点少，不够具体，因此在这里分享一下使用的过程。

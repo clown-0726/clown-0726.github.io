@@ -1,11 +1,12 @@
 ### Aliyun path
-- http://lilu-blog.oss-cn-beijing.aliyuncs.com/
+- 47.105.63.161
 
 ### Theme Refer
 - https://github.com/tufu9441/maupassant-hexo
 
 ### Start project
 - hexo server
+- hexo generate & hexo deploy
 
 ### ENV
 - node 12.x
