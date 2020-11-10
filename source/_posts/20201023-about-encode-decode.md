@@ -28,7 +28,7 @@ tags:
 
 话不多说，直接上图：
 
-![各种编码之间的转换是通过unicode作桥梁的](https://s1.ax1x.com/2020/10/15/07Ao11.png)
+![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/encode-decode.png)
 
 从上图我们可以看出，可以把 unicode 编码作为一种中间编码来看待，其他编码可以通过 unicode 进行相互转化。当一种编码转成 unicode 编码的过程我们叫 decode，当把 unicode 转成一种特定的编码的过程我们叫 encode。由于 unicode 是定长的，因此在程序编码的时候一般会使用 unicode 作为程序的默认编码形式（python2.7 除外）
 
@@ -40,7 +40,7 @@ tags:
 
 比如 python 文件我们一般会在头部先写上 `# -*- coding: utf-8 -*-`   表示当前文件的存储编码是 utf-8，这个和写的程序无关。而 `sys.setdefaultencoding('utf-8')` 才表示我们声明的变量都是用 utf-8 的编码存储的而不关心系统的默认编码。
 
-[![07eS39.md.png](https://s1.ax1x.com/2020/10/15/07eS39.md.png)](https://imgchr.com/i/07eS39)
+![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/py-file-en-de-coding.png)
 
 #### json.dumps的参数:ensure_ascii=False
 
