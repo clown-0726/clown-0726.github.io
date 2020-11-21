@@ -1,5 +1,5 @@
 ---
-title: Docker Swarm 集群的搭建过程
+title: 记录从头搭建 Docker Swarm 集群的过程
 date: 2020-11-10 21:56:16
 categories: 
     - Coding
