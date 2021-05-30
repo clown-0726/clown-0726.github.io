@@ -81,4 +81,6 @@ drwxr-xr-x 2 bitnami root 4096 Feb 15 13:18 php-fpm
 ### References:
 
 [1] Modify The PhpMyAdmin File Upload Limit: https://docs.bitnami.com/bch/apps/wordpress-pro/administration/increase-upload-limit-phpmyadmin/
+[2] How to Increase File Upload Size in AWS Lightsail WordPress Site: https://www.theshravan.net/blog/how-to-increase-file-upload-size-in-aws-lightsail-wordpress-site/
+[3] How To Increase The WordPress Upload Limit On An AWS Lightsail Bitnami Installation: https://isotropic.co/how-to-increase-the-wordpress-upload-limit-on-an-aws-lightsail-bitnami-installation/
 
