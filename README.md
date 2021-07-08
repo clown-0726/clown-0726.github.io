@@ -25,7 +25,7 @@
 - 读书笔记     Reading
 - 摄影说       Photography
 - 杂谈         Tittle-tattle
-- Snippet
+- Snippet     Snippet
 
 ### 文章标签
 - 好文
