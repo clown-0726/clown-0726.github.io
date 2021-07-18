@@ -11,7 +11,7 @@ tags:
 
 <!--more-->
 
-![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/fuji-in-cloud.jpeg)
+![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20201110-how-to-build-docker-swarm-cluster/fuji-in-cloud.jpeg)
 
 <center><font face="黑体" size=2>云中的富士山 | 2018-11-25 | 拍摄于 iphone 7p</font></center>
 
@@ -137,13 +137,13 @@ ingress 的 overlay 网络。overlay 网络就是在物理网络之上的一个�
 
 VIP LB 是一个基于虚拟网络的负载均衡，每个机器都有自己的虚拟IP
 
-![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/docker-swarm-ingress-network.png)
+![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20201110-how-to-build-docker-swarm-cluster/docker-swarm-ingress-network.png)
 
 #### Ingress + link 网络
 
 其实就是在原来的 ingress 网络上加上了 link，可以使得相互依赖的服务进行访问。内部使用了容器的DNS映射。
 
-![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/docker-swarm-ingress-link%20network.png)
+![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20201110-how-to-build-docker-swarm-cluster/docker-swarm-ingress-link-network.png)
 
 #### 自定义网络
 
@@ -151,7 +151,7 @@ VIP LB 是一个基于虚拟网络的负载均衡，每个机器都有自己的�
 
 将服务绑定到网络 `docker service create -p 80:80 --network=mynet --name nginx nginx`
 
-![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/docker-swarm-custom-network.png)
+![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20201110-how-to-build-docker-swarm-cluster/docker-swarm-custom-network.png)
 
 #### 其他
 
