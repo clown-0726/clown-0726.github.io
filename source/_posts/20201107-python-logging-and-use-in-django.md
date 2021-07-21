@@ -12,7 +12,7 @@ tags:
 
 <!--more-->
 
-![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/tech_company_structure.jpg)
+![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20201107-python-logging-and-use-in-django/tech_company_structure.jpg)
 
 <center><font face="黑体" size=2>世界顶尖 IT 公司的组织架构图 | 2020-06-07 | 拍摄于 iphone 7p</font></center>
 
@@ -22,7 +22,7 @@ Python 中的 logging 模块提供了一组便利的函数，用来做简单的�
 
 ## logging 架构和调度过程
 
-![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/how_python_logging_works.jpg)
+![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20201107-python-logging-and-use-in-django/how_python_logging_works.jpg)
 
 上图是 logging 模块的主要模块和调度过程。我们可以将其主要分为4个部分，分别是 Logger，Handler，Filter 和 Formatter。
 
