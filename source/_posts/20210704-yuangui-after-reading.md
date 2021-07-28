@@ -12,7 +12,7 @@ tags:
 
 <!--more-->
 
-![长白山天池](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/2021-07-04-yuangui-after-reading/changbai-mountain-tianchi.jpg)
+![长白山天池](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20210704-yuangui-after-reading/changbai-mountain-tianchi.jpg)
 
 
 雨落之时，思绪最甚。今天是大雨，引用书中的一句话做本文开头，“真正美妙的人生大概就从我们坚定不移地追寻自己的梦想的时候，才正式开始”。

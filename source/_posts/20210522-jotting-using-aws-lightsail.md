@@ -13,7 +13,7 @@ tags:
 
 <!--more-->
 
-![杂交水稻](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/2021-05-22-lightsail-sui-bi-ji-lu/za-jiao-shui-dao.jpeg)
+![杂交水稻](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20210522-jotting-using-aws-lightsail/za-jiao-shui-dao.jpeg)
 
 AWS Lightsail 是 EC2 的更简单替代方案，它提供构建网站和小型 Web 应用程序所需的所有工具。相比较 EC2 需要大量的精力和专业知识进行设置和配置，而 Lightsail 只需简单的点击配置一下就可以得到一个小型站点。
 
