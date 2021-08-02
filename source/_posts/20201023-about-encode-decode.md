@@ -12,7 +12,7 @@ tags:
 
 <!--more-->
 
-![没有绝对的产品](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/2020-10-23-about-encode-decode/chanpin_tezheng.jpg)
+![没有绝对的产品](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20201023-about-encode-decode/chanpin_tezheng.jpg)
 
 ## 各个编码集的由来和关系
 
@@ -29,13 +29,13 @@ Unicode 至今仍在不断增修，每个新版本都加入更多新的字符。
 
 现在的 Unicode 字符分为 17 组编排，每组为一个平面（Plane），而每个平面拥有 65536（即 2 的 16 次方）个码值（Code Point）。然而，目前 Unicode 只用了少数平面，我们用到的绝大多数字符都属于第 0 号平面，即 BMP 平面。除了 BMP 平面之外，其它的平面都被称为补充平面。
 
-![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/2020-10-23-about-encode-decode/unicode_bmp.png)
+![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20201023-about-encode-decode/unicode_bmp.png)
 
 Unicode 标准也在不断发展和完善。目前，使用 4 个字节的编码表示一个字符，就可以表示出全世界所有的字符。
 
 ## 编码集之间的转换
 
-![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/2020-10-23-about-encode-decode/encode-decode.png)
+![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20201023-about-encode-decode/encode-decode.png)
 
 从上图我们可以看出，可以把 UNICODE 编码作为一种中间编码来看待，其他编码可以通过 UNICODE 进行相互转化。当一种编码转成 UNICODE 编码的过程我们叫 decode，当把 UNICODE 转成一种特定的编码的过程我们叫 encode。由于 UNICODE 是定长的，因此大多数程序编码一般会使用 UNICODE 作为程序的默认编码形式（python2.7 除外）。
 
@@ -87,7 +87,7 @@ lang.encode("utf-8")
 
 比如 python 文件我们一般会在头部先写上 `# -*- coding: utf-8 -*-` 表示当前文件的存储编码是 utf-8，这个和写的程序无关。而 `sys.setdefaultencoding('utf-8')` 表示我们声明的变量都是用 utf-8 的编码存储和传输的而不关心系统的默认编码。
 
-![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/2020-10-23-about-encode-decode/py-file-en-de-coding.png)
+![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20201023-about-encode-decode/py-file-en-de-coding.png)
 
 #### json.dumps的参数: ensure_ascii=False
 
