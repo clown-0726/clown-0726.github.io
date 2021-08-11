@@ -11,7 +11,7 @@ tags:
 
 <!--more-->
 
-![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/yummy-pics/the-gogoses-under-fuji-mountain.jpeg)
+![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20201128-the-grail-and-wings-layout/the-gogoses-under-fuji-mountain.jpeg)
 
 <center><font face="黑体" size=2>富士山下的鹅 | 2018-11-25 | 拍摄于 iphone 7p</font></center>
 

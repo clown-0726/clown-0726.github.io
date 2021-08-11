@@ -12,7 +12,7 @@ Live is but a dream. 书中总有一些句子会感动你
 
 <!--more-->
 
-![西安，一个吃喝玩乐兼具的地方](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/yummy-pics/chi-he-wan-le-xian.jpeg)
+![西安，一个吃喝玩乐兼具的地方](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20201221-feng-sha-xing-chen-notes/chi-he-wan-le-xian.jpeg)
 
 有些“前辈”总会故作同情地朝我们摇摇头，脸上写满了对我们单纯无知的怜悯，从而越发显得他们资历深厚。
 
