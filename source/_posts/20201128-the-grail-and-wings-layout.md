@@ -83,7 +83,7 @@ tags:
 
 代码的如下：
 
-![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/css-grail-layout/basic_layout_result.png)
+![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20201128-the-grail-and-wings-layout/basic_layout_result.png)
 
 这样我就通过简单 `float` 布局实现了一个三列布局，但是这里面有个问题。在页面中红色的部分是整个页面最重要的一部分，在代码中是`<div class="middle">Content</div>` ，这段代码在 Left menu 和 Right menu 的后面，根据 html 的渲染顺序，最重要的的 content  是最后才被进行渲染的，因此这不是最优的三列布局方式。
 
@@ -133,11 +133,11 @@ tags:
 
 我们得到如下布局：
 
-![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/css-grail-layout/grial_layout_goon_01.png)
+![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20201128-the-grail-and-wings-layout/grial_layout_goon_01.png)
 
 Left 和 Right 因为 Content 的宽度是 100% 的原因被挤下来了，因此我们要想办法让 Left 和 Right 上去。这里就用到了`-margin `的技巧。
 
-<img src="https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/css-grail-layout/grial_layout_goon_02.png" style="zoom:50%;" />
+<img src="https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20201128-the-grail-and-wings-layout/grial_layout_goon_02.png" style="zoom:50%;" />
 
 如上图，假如 Content 的宽度不是 100%，Content Left 和 Right 会浮动的在同一行，我们给 Left 的透明度设置为 0.5，然后再设置 `margin-left: -60px` 我们看到 Left 的一部分盖在了 Content 的上面，形成了一部分的重叠。
 
@@ -211,7 +211,7 @@ Left 和 Right 因为 Content 的宽度是 100% 的原因被挤下来了，因�
 
 结果如下：
 
-![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/css-grail-layout/basic_layout_result.png)
+![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20201128-the-grail-and-wings-layout/basic_layout_result.png)
 
 ## 完成双飞翼布局
 
@@ -291,7 +291,7 @@ Left 和 Right 因为 Content 的宽度是 100% 的原因被挤下来了，因�
 
 结果如下：
 
-![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/css-grail-layout/basic_layout_result.png)
+![](https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20201128-the-grail-and-wings-layout/basic_layout_result.png)
 
 ## 进一步优化
 
