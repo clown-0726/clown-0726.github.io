@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>我的 vscode 配置笔记 | 曹立禄的网络日志</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 5.2.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">我的 vscode 配置笔记</h1><a id="logo" href="/.">曹立禄的网络日志</a><p class="description">I am penny-pincher/tightwad/cheapskate javascript Vulgar man!</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/categories/Coding/"><i class="fa fa-bug"> 码农笔记</i></a><a href="/categories/Tittle-tattle/"><i class="fa fa-beer"> 杂谈</i></a><a href="/categories/Photography/"><i class="fa fa-camera"> 摄影说</i></a><a href="/tags/"><i class="fa fa-bookmark"> 标签</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">我的 vscode 配置笔记</h1><div class="post-meta">2021-09-15<span> | </span><span class="category"><a href="/categories/Coding/">Coding</a></span></div><div class="post-content"><p>窃钩者诛，窃国者侯。</p>
+<a id="more"></a>
+
+<p><img src="https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20210915-my-vscode-config-note/crab-people.jpg" alt="不只是吃螃蟹"></p>
+<h2 id="按不同颗粒度操作（通识操作）"><a href="#按不同颗粒度操作（通识操作）" class="headerlink" title="按不同颗粒度操作（通识操作）"></a>按不同颗粒度操作（通识操作）</h2><p>对于这些操作，是每个编辑器/IDE都具备的，也是应该牢记于心的。当然，vscode 也是很好的支持这些操作的。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>字符颗粒度</th>
+<th>单词颗粒度</th>
+<th>整行颗粒度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>移动</td>
+<td>up/down/left/right</td>
+<td>up/down/left/right + Option</td>
+<td>up/down/left/right + Command</td>
+</tr>
+<tr>
+<td>选择</td>
+<td>+ shift</td>
+<td>+ shift</td>
+<td>+ shift</td>
+</tr>
+</tbody></table>
+<h2 id="多光标特性"><a href="#多光标特性" class="headerlink" title="多光标特性"></a>多光标特性</h2><p>多光标操作给代码的编写提供了极大的方便，下面根据不同场景有三种方法使用多光标操作。</p>
+<ul>
+<li>按住 <code>option</code> 后用鼠标选择</li>
+<li>用 <code>cmd + d</code> 命令进行就近多选</li>
+<li>首先选择多行代码，然后按下 <code>option + shift + i</code>，每一行的最后都会创建一个新的光标</li>
+</ul>
+<h2 id="必备快捷键（In-mac）"><a href="#必备快捷键（In-mac）" class="headerlink" title="必备快捷键（In mac）"></a>必备快捷键（In mac）</h2><ul>
+<li>删除光标前的所有内容：<code>cmd + delete</code> </li>
+<li>删除光标后面的所有内容：<code>fn + delete</code></li>
+<li>删除光标前单词颗粒度度的内容：<code>option + delete</code></li>
+<li>在花括号之间来回跳转：<code>Cmd + Shift + \</code></li>
+<li>选中代码（或当前行）上下移动快捷键（加入shift就是复制）：<code>option + up/down</code></li>
+<li>选中代码后，进行多行合并：<code>ctrl + j</code></li>
+<li>注释代码：<code>ctrl + /</code></li>
+<li>格式化代码：<code>option + Shift + f</code> </li>
+<li>全局搜索：<code>cmd + shift + f</code></li>
+<li>打开隐藏终端：`ctrl + ``</li>
+<li>智能提示：<code>ctrl + space</code></li>
+<li>新建空白文件：<code>cmd + n</code></li>
+<li>打开最近打开项目列表：<code>ctrl + r</code></li>
+<li>退回光标的上一个位置：<code>cmd + u</code></li>
+</ul>
+<h2 id="命令行操作"><a href="#命令行操作" class="headerlink" title="命令行操作"></a>命令行操作</h2><p>命令行操作是 vscode 的一个重要功能，我们只需要在命令行中输入要操作的关键字，然后回车就可以很好的完成任务。</p>
+<h4 id="打开命令行：cmd-shift-p"><a href="#打开命令行：cmd-shift-p" class="headerlink" title="打开命令行：cmd + shift + p"></a>打开命令行：<code>cmd + shift + p</code></h4><p>第一个符号代表不通功能的分类，比如：</p>
+<ul>
+<li><code>&gt;</code> 代表用于显示所有命令。</li>
+<li><code>@</code> 用于显示和跳转文件中的“符号”。</li>
+<li><code>:</code> 用于跳转到当前文件中的某一行。</li>
+<li><code>?</code> 用于显示有哪些功能分类（最重要）。</li>
+</ul>
+<h4 id="下面是一些常用命令的关键字"><a href="#下面是一些常用命令的关键字" class="headerlink" title="下面是一些常用命令的关键字"></a>下面是一些常用命令的关键字</h4><ul>
+<li><strong>大小写转换</strong>：搜索 <code>lower</code> 和 <code>upper</code> 两个关键词</li>
+<li><strong>用户自定义设置</strong>：搜索 <code>user setting</code> 两个关键词</li>
+<li><strong>用户 snippet</strong>：搜索 <code>user snippet</code> 两个关键词</li>
+<li><strong>排序</strong>：搜索 <code>sort</code> 两个关键词</li>
+</ul>
+<h2 id="vscode-的设置"><a href="#vscode-的设置" class="headerlink" title="vscode 的设置"></a>vscode 的设置</h2><h4 id="打开设置界面"><a href="#打开设置界面" class="headerlink" title="打开设置界面"></a>打开设置界面</h4><p>可以在命令行中通过搜索关键字 <code>user setting</code> 来打开用户设置</p>
+<h4 id="vscode-的设置分为三类"><a href="#vscode-的设置分为三类" class="headerlink" title="vscode 的设置分为三类"></a>vscode 的设置分为三类</h4><ul>
+<li>第一类是 vscode 本身的设置（不推荐动）</li>
+<li>第二类是用户设置（推荐个人修改这个配置以适应项目）</li>
+<li>第三类是项目本身的配置（针对项目的配置，主要在 .vscode 目录下有四个文件）<br><code>extension.json</code>，<code>launch.json</code>，<code>settings.json</code>，<code>tasks.json</code>。</li>
+</ul>
+<h4 id="launch-json"><a href="#launch-json" class="headerlink" title="launch.json"></a>launch.json</h4><p><code>launch.json</code> 文件是专门为 debugger 调试器准备的，在 vscode 中把调试功能的最终实现交给插件来完成的，因此 vscode 提供了统一的调试接口 Debug Adapter Protocol（DAP）。</p>
+<p>vscode 中内置 node 环境的调试插件，但是如果想要调试其他程序，则需要安装其对应的插件，可以在插件仓库中搜索 <code>Debugger for xxx</code> 来获得不同的调试环境。</p>
+<p>对于 launch.json 文件的配置在不同的环境中是有很多区别的，下面是配置的前端 vue 的调试配置。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">  &quot;version&quot;: &quot;0.2.0&quot;,</span><br><span class="line">  &quot;configurations&quot;: [</span><br><span class="line">    &#123;</span><br><span class="line">      &#x2F;&#x2F; 命名</span><br><span class="line">      &quot;name&quot;: &quot;Launch via NPM&quot;,</span><br><span class="line">      &#x2F;&#x2F; 通过 launch 启动</span><br><span class="line">      &quot;request&quot;: &quot;launch&quot;,</span><br><span class="line">      &#x2F;&#x2F; 执行脚本</span><br><span class="line">      &quot;runtimeArgs&quot;: [&quot;run&quot;, &quot;serve&quot;],</span><br><span class="line">      &#x2F;&#x2F; 执行命令</span><br><span class="line">      &quot;runtimeExecutable&quot;: &quot;npm&quot;,</span><br><span class="line">      &#x2F;&#x2F; 忽律文件</span><br><span class="line">      &quot;skipFiles&quot;: [&quot;&lt;node_internals&gt;&#x2F;**&quot;],</span><br><span class="line">      &#x2F;&#x2F; 指定调试环境</span><br><span class="line">      &quot;type&quot;: &quot;node&quot;,</span><br><span class="line">      &#x2F;&#x2F; 工作目录</span><br><span class="line">      &quot;cwd&quot;: &quot;$&#123;workspaceFolder&#125;&#x2F;client&quot;,</span><br><span class="line">      &#x2F;&#x2F; 启动端口</span><br><span class="line">      &quot;port&quot;: 9229</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="tasks-json"><a href="#tasks-json" class="headerlink" title="tasks.json"></a>tasks.json</h4><p>这个文件是专门用来定制我们专属的执行任务的，我们在命令行中输入关键字 <code>tasks</code> 就可以进行任务的创建和执行了。</p>
+<p>下面是一个简单 task 配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&quot;version&quot;: &quot;2.0.0&quot;,</span><br><span class="line">  &quot;tasks&quot;: [</span><br><span class="line">    &#123;</span><br><span class="line">      &#x2F;&#x2F; task 名字</span><br><span class="line">      &quot;label&quot;: &quot;test shell&quot;,</span><br><span class="line">      &#x2F;&#x2F; 任务的类型，比如 npm，shell，process 等</span><br><span class="line">      &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">      &#x2F;&#x2F; 执行命令</span><br><span class="line">      &quot;command&quot;: &quot;.&#x2F;scripts&#x2F;test.sh&quot;,</span><br><span class="line">      &quot;windows&quot;: &#123;</span><br><span class="line">        &quot;command&quot;: &quot;.\\scripts\\test.cmd&quot;</span><br><span class="line">      &#125;,</span><br><span class="line">      &#x2F;&#x2F; 分组</span><br><span class="line">      &quot;group&quot;: &quot;test&quot;,</span><br><span class="line">      &#x2F;&#x2F; 是用于控制任务运行的时候，是否要自动调出运行的界面</span><br><span class="line">      &quot;presentation&quot;: &#123;</span><br><span class="line">        &quot;reveal&quot;: &quot;always&quot;,</span><br><span class="line">        &quot;panel&quot;: &quot;new&quot;</span><br><span class="line">      &#125;,</span><br><span class="line">      &#x2F;&#x2F; 其他配置，比如执行目录，环境变量等</span><br><span class="line">      &quot;options&quot;: &#123;</span><br><span class="line">        &quot;cwd&quot;: &quot;&quot;,</span><br><span class="line">        &quot;env&quot;: &#123;&#125;,</span><br><span class="line">        &quot;shell&quot;: &#123;</span><br><span class="line">          &quot;executable&quot;: &quot;bash&quot;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Emmet-支持"><a href="#Emmet-支持" class="headerlink" title="Emmet 支持"></a>Emmet 支持</h2><p>Emmet 是一个强大的 html 和 css 书写工具。</p>
+<p>下面是开启 Emmet 的关键配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 对于其他语言，你也可以通过如下的设置来将其打开</span><br><span class="line">&quot;emmet.includeLanguages&quot;: &#123;</span><br><span class="line">  &quot;javascript&quot;: &quot;javascriptreact&quot;,</span><br><span class="line">  &quot;vue-html&quot;: &quot;html&quot;,</span><br><span class="line">  &quot;razor&quot;: &quot;html&quot;,</span><br><span class="line">  &quot;plaintext&quot;: &quot;jade&quot;,</span><br><span class="line">&#125;,</span><br><span class="line">&#x2F;&#x2F; 是否使用 tag 键出触发 emmet abbreviation</span><br><span class="line">&quot;emmet.triggerExpansionOnTab&quot;: true,</span><br><span class="line">&#x2F;&#x2F; 是否启动补全提示</span><br><span class="line">&quot;emmet.showExpandedAbbreviation&quot;: &quot;always&quot;,</span><br></pre></td></tr></table></figure>
+
+<p>同样可以再命令行操作中使用 emmet，关键字就是 <code>emmet: xxx</code></p>
+<h2 id="javascript-和-node-支持"><a href="#javascript-和-node-支持" class="headerlink" title="javascript 和 node 支持"></a>javascript 和 node 支持</h2><p>我们知道 javascript 和 typescript 是 vscode 的亲儿子，很多特性都是天然支持这两门语言的。</p>
+<h4 id="类型提示"><a href="#类型提示" class="headerlink" title="类型提示"></a>类型提示</h4><ul>
+<li><p>JSDoc</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * bar</span><br><span class="line"> * @param &#123;sring&#125; sr </span><br><span class="line"> *&#x2F;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>typings/d.ts</p>
+</li>
+<li><p><code>// @ts-check</code> 开启代码审查</p>
+</li>
+</ul>
+<h4 id="模块引用"><a href="#模块引用" class="headerlink" title="模块引用"></a>模块引用</h4><p>由于 js 中模块的规范很多，我们需要通过配置一个 jsconfig.json 来提示 javascript 的语言服务。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;compilerOptions&quot;: &#123;</span><br><span class="line">    &#x2F;&#x2F; 使用那种模块规范</span><br><span class="line">    &quot;module&quot;: &quot;commonjs&quot;,</span><br><span class="line">    &#x2F;&#x2F; js 语法规范</span><br><span class="line">    &quot;target&quot;: &quot;es2016&quot;,</span><br><span class="line">    &#x2F;&#x2F; 根路径</span><br><span class="line">    &quot;baseUrl&quot;: &quot;.&quot;,</span><br><span class="line">    &#x2F;&#x2F; 搜索路径</span><br><span class="line">    &quot;paths&quot;: &#123;</span><br><span class="line">      &quot;*&quot;: [</span><br><span class="line">        &quot;*&quot;,</span><br><span class="line">        &quot;common&#x2F;*&quot;</span><br><span class="line">       ]</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;,</span><br><span class="line">   &#x2F;&#x2F; 相当于给每个文件加上 &#x2F;&#x2F; @ts-check</span><br><span class="line">   &quot;checkJs&quot;: true,</span><br><span class="line">   &#x2F;&#x2F; 不包括哪些文件</span><br><span class="line">   &quot;exclude&quot;: [</span><br><span class="line">     &quot;node_modules&quot;,</span><br><span class="line">     &quot;**&#x2F;node_modules&#x2F;*&quot;</span><br><span class="line">   ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="文件及文件内容搜索"><a href="#文件及文件内容搜索" class="headerlink" title="文件及文件内容搜索"></a>文件及文件内容搜索</h2><p>按 <code>cmd + p</code> 可以打开文件命令行：</p>
+<ul>
+<li>直接通过文件名搜索，<code>enter</code> 直接打开文件，<code>cmd + enter</code> 在新窗口打开文件</li>
+<li>先输入<code>:</code> 是当前文件跳转行（<code>ctrl + g</code>）</li>
+<li>先输入<code>@</code> 是当前文件大纲跳转（<code>cmd + shift + o</code>）</li>
+</ul>
+<p>定义和实现</p>
+<ul>
+<li>定义和实现之间的跳转：<code>cmd + click</code>，<code>cmd + u</code>，<code>ctrl + -</code> 为回来</li>
+<li>引用列表：<code>shift + F12</code></li>
+</ul>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h4 id="shell-中使用-vscode-做代码比较"><a href="#shell-中使用-vscode-做代码比较" class="headerlink" title="shell 中使用 vscode 做代码比较"></a>shell 中使用 vscode 做代码比较</h4><p>vscode 可以安装其命令行工具 code 到 shell 中，里面会有很多比较实用的功能，比如借助 vscode 来比较两个文件的不同。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-d --diff &lt;file&gt; &lt;file&gt;           Compare two files with each other.</span><br></pre></td></tr></table></figure>
+
+<h4 id="如何从-vscode-中粘贴纯文本"><a href="#如何从-vscode-中粘贴纯文本" class="headerlink" title="如何从 vscode 中粘贴纯文本"></a>如何从 vscode 中粘贴纯文本</h4><p>其他编辑器也适用！</p>
+<p>当你从 vscode 中复制文本后，在其他编辑器按下 <code>cmd + v</code> 时会带有 vscode 的格式，而你按下 <code>cmd + shift + v</code> 则是粘贴纯文本。</p>
+<h4 id="自定义代码折叠"><a href="#自定义代码折叠" class="headerlink" title="自定义代码折叠"></a>自定义代码折叠</h4><p>基于语言的代码折叠参考下面链接（自定义代码折叠）：<br><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/editor/codebasics#_folding">https://code.visualstudio.com/docs/editor/codebasics#_folding</a></p>
+<h4 id="插件分享"><a href="#插件分享" class="headerlink" title="插件分享"></a>插件分享</h4><p>你可以通过在项目的 .vscode 文件夹下，创建一个文件 extensions.json。在这个 JSON 文件里，你只需提供一个键（key） recommendations，然后将你想要推荐给这个项目的其他工程师的插件的 ID 们，全部放入到这个数组中。当他们打开这个项目，而且并没有安装这些插件时，VS Code就会给他们提示了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;recommendations&quot;: [</span><br><span class="line">        &quot;eg2.tslint&quot;,</span><br><span class="line">        &quot;dbaeumer.vscode-eslint&quot;,</span><br><span class="line">        &quot;msjsdiag.debugger-for-chrome&quot;,</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="设计思想"><a href="#设计思想" class="headerlink" title="设计思想"></a>设计思想</h2><p>“三步走”的演变过程，作为一个通用的学习新工具的方法是我在本篇文章中的最大收获。</p>
+<ul>
+<li><p>第一步：了解编辑器的快捷键和语言支持，快捷键值得多花时间；</p>
+</li>
+<li><p>第二步：开始挑剔编辑器的其他组件，但凡是跟自己的工作习惯或者工作流不匹配的，就会想办法换掉它，这是个做减法的过程；</p>
+</li>
+<li><p>第三步：最后一步，就是自己学习写插件了，编辑器本身的功能和社区不能够完全满足自己的需求，本着“麻烦别人不如磨炼自己”的精神，我开始自己动手。</p>
+</li>
+</ul>
+<p>很多人都把编辑器等同于IDE，其实从专业角度来讲并非这样。IDE 更为关注开箱即用的编程体验、对代码往往有很好的智能理解，同时侧重于工程项目，为代码调试、测试、工作流等都有图形化界面的支持，因此相对笨重，Java程序员常用的Eclipse定位就是IDE；而编辑器则相对更轻量，侧重于文件或者文件夹，语言和工作流的支持更丰富和自由，VS Code 把自己定位在编辑器这个方向上，但又不完全局限于此。</p>
+<h2 id="推荐的插件"><a href="#推荐的插件" class="headerlink" title="推荐的插件"></a>推荐的插件</h2><h3 id="阅读提升系列"><a href="#阅读提升系列" class="headerlink" title="阅读提升系列"></a>阅读提升系列</h3><p><strong>Bracket Pair Colorizer</strong><br>该插件可以为你把成对的括号做颜色区分，并且提供一根连接线。方便我们审阅代码结构。</p>
+<p><strong>Rainbow Brackets</strong><br>为同一对花括号指定一个单独的配色，这样你就能够轻松地一眼看出花括号的配对了。</p>
+<p><strong>Indent Rainbow</strong><br>为你的代码缩进提供颜色上的提示。</p>
+<p><strong>Pigment</strong><br>将颜色渲染在段代码的下面。</p>
+<p><strong>vscode-icons</strong><br>非常好看的文件图标。</p>
+<p><strong>CSS Peek</strong><br>css 样式查看器，可快速查看我们的css样式，非常方便快捷。</p>
+<p><strong>Better Comments</strong><br>在代码中通过不同颜色查看注释</p>
+<p><img src="https://lilu-pic-bed.oss-cn-beijing.aliyuncs.com/my-blog/20210915-my-vscode-config-note/colourful-comment.png" alt="img"></p>
+<p><strong>RemoteHub</strong><br>在本地查看 github repository 上的代码。</p>
+<h3 id="操作辅助系列"><a href="#操作辅助系列" class="headerlink" title="操作辅助系列"></a>操作辅助系列</h3><p><strong>Auto Rename Tag / Auto Close Tag</strong><br>顾名思义，前端开发必备工具。</p>
+<p><strong>Import Cost</strong><br>很好地在代码中给我们以提示，告诉我们引入的某个包，它最终会导致整个项目的大小增加多少。</p>
+<p><strong>Path Intellisense</strong><br>自动提示文件路径，支持各种快速引入文件。</p>
+<p><strong>Npm Intellisense</strong><br>可自动完成导入语句中的npm模块。</p>
+<p><strong>Code Spell Checker</strong><br>css样式查看器，可快速查看我们的css样式，非常方便快捷。</p>
+<p><strong>JavaScript Booster</strong><br>这款神器可以在我们代码写的不规范或者有待调整的地方，在光标聚焦后，会有一个小灯泡。会提示对应的不合理原因和改进方案。极大的提高了我们的代码优雅度，强烈推荐。</p>
+<p><strong>Change case</strong><br>在各种命名法之间快速切换</p>
+<p>使用：在 vs code 命令中输入 prefix: change case…</p>
+<p><strong>Better Align</strong><br>以等号作为对其中心的格式化插件，源码中爱用。</p>
+<p>使用：选中代码后，在 vs code 的命令中输入：align。</p>
+<h3 id="Snippet-系列"><a href="#Snippet-系列" class="headerlink" title="Snippet 系列"></a>Snippet 系列</h3><p><strong>HTML Snippets / JavaScript (ES6) code snippets</strong><br>snippets 系列。语法智能提示，以及快速输入。</p>
+<h3 id="Lint-系列"><a href="#Lint-系列" class="headerlink" title="Lint 系列"></a>Lint 系列</h3><p><strong>ESlint / TSLint</strong><br>略</p>
+<h3 id="实用工具系列"><a href="#实用工具系列" class="headerlink" title="实用工具系列"></a>实用工具系列</h3><p><strong>Partial Diff</strong><br>文件比较是一个很常见的场景，如果光凭我们肉眼分别的话，累人不说还容易出错。<code>Partial Diff</code>的出现就正好解决了这个问题。</p>
+<p>使用：点击右键，选项中 Compare text 开头的就是此插件。</p>
+<p><strong>Live Share</strong><br>Live Share是微软官方出品的非常强大的服务，通过 Live Share service，你可以将你本地的工作区，直 </p>
+<p>接分享给你的同伴，然后你的同伴就可以直接编辑你的代码，与你共享代码调试、集成终端等等，而无 </p>
+<p>需安装任何环境。</p>
+<h3 id="有趣的插件"><a href="#有趣的插件" class="headerlink" title="有趣的插件"></a>有趣的插件</h3><p><strong>Rainbow Fart</strong><br>萌妹子语音陪你写代码，一个神奇的 VSCode 插件。</p>
+<h2 id="REFERENCE"><a href="#REFERENCE" class="headerlink" title="REFERENCE"></a>REFERENCE</h2><p>[1] 33 个提高前端工作效率的 VSCode 实用插件: <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/8IMjdm1RfzT4DeVW1dOcOg">https://mp.weixin.qq.com/s/8IMjdm1RfzT4DeVW1dOcOg</a></p>
+</div><div class="tags"><a href="/tags/%E9%9A%8F%E7%AC%94/"><i class="fa fa-tag"></i>随笔</a></div><div class="post-nav"><a class="pre" href="/2021/09/16/20201023-about-encode-decode/">讲明白编码/解码</a><a class="next" href="/2021/08/30/20210830-how-to-deal-with-django-migrations/">如何整理积重难返的 django db migrations 文件</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="http://example.com"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Coding/">Coding</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Reading/">Reading</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tittle-tattle/">Tittle-tattle</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/WEB/" style="font-size: 15px;">WEB</a> <a href="/tags/Javascript/" style="font-size: 15px;">Javascript</a> <a href="/tags/%E5%A5%BD%E6%96%87/" style="font-size: 15px;">好文</a> <a href="/tags/DB/" style="font-size: 15px;">DB</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 15px;">后端</a> <a href="/tags/Python/" style="font-size: 15px;">Python</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 15px;">随笔</a> <a href="/tags/%E8%AF%BB%E4%B9%A6/" style="font-size: 15px;">读书</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 15px;">杂谈</a> <a href="/tags/AWS/" style="font-size: 15px;">AWS</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/09/16/20201023-about-encode-decode/">讲明白编码/解码</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/09/15/20210915-my-vscode-config-note/">我的 vscode 配置笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/08/30/20210830-how-to-deal-with-django-migrations/">如何整理积重难返的 django db migrations 文件</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/08/15/20210815-http-knowledge/">HTTP 下的前后端交互</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/08/11/20210811-linux-pkg-install-in-source/">linux 源码包安装拾遗</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/08/09/20210809-aws-config-ubuntu-gui/">AWS 配置 Ubuntu 可视化界面</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/07/31/20210731-hen-xi-huan-da-bing-de-ju-zi/">很喜欢大兵写的这些句子</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/07/28/20210728-how-to-publish-python-package-in-pipy/">如何在 pypi 上发布自己的 python 包</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/07/17/20210717-dai-ma-de-huai-wei-dao/">代码的坏味道笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/07/13/20210713-wordpress-learning-notes/">Wordpress 拾遗笔记</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="/archives/" title="文章归档" target="_blank">文章归档</a><ul></ul><a href="https://github.com/clown-0726?tab=repositories" title="GITHUB" target="_blank">GITHUB</a><ul></ul><a href="https://www.orbitfin.ai/" title="Orbit Financial Technology" target="_blank">Orbit Financial Technology</a><ul></ul><a href="http://www.ruanyifeng.com/home.html" title="阮一峰" target="_blank">阮一峰</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2021 <a href="/." rel="nofollow">曹立禄的网络日志.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="http://beian.miit.gov.cn/"> 辽ICP备2020013446号</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
