@@ -110,12 +110,12 @@ def globe_exception_handler(exc, context):
 到这里，Django 结合 DRF 的统一全局异常处理就配置好了。
 
 ## REFERENCE
-[1] Python Django，中间件，中间件函数，全局异常处理: https://blog.csdn.net/houyanhua1/article/details/85028983
-[2] Django-drf-全局异常处理: https://zhuanlan.zhihu.com/p/288814772
-[3] Django捕获所有异常的处理: https://blog.csdn.net/huangqiang1363/article/details/106472203/
-[4] Django rest framework 自定义Exception: https://www.cnblogs.com/ifykwf/p/7054790.html
-[5] Django rest framework自定义返回数据格式: https://www.jianshu.com/p/c0be24752584
-[6] Django中异常处理 Exceptions: https://www.cnblogs.com/itBlogToYpl/articles/11844547.html
-[7] django rest framework异常捕获: https://blog.csdn.net/weixin_46105038/article/details/117228013
-[8] Django REST framework异常捕获的全局配置: https://blog.csdn.net/Mr_w_ang/article/details/85017583
+[1] Python Django，中间件，中间件函数，全局异常处理: https://blog.csdn.net/houyanhua1/article/details/85028983  
+[2] Django-drf-全局异常处理: https://zhuanlan.zhihu.com/p/288814772  
+[3] Django捕获所有异常的处理: https://blog.csdn.net/huangqiang1363/article/details/106472203/  
+[4] Django rest framework 自定义Exception: https://www.cnblogs.com/ifykwf/p/7054790.html  
+[5] Django rest framework自定义返回数据格式: https://www.jianshu.com/p/c0be24752584  
+[6] Django中异常处理 Exceptions: https://www.cnblogs.com/itBlogToYpl/articles/11844547.html  
+[7] django rest framework异常捕获: https://blog.csdn.net/weixin_46105038/article/details/117228013  
+[8] Django REST framework异常捕获的全局配置: https://blog.csdn.net/Mr_w_ang/article/details/85017583  
 [9] Exception handling in REST framework views: https://www.django-rest-framework.org/api-guide/exceptions/

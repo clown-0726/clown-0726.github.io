@@ -354,5 +354,5 @@ Left 和 Right 因为 Content 的宽度是 100% 的原因被挤下来了，因�
 这两种布局方式在兼容各个浏览器的基础上，实现了中间 Content 区域的优先渲染，是一种在大型复杂页面场景下比较完美的解决方案。
 
 ## Reference
-[1]圣杯布局和双飞翼布局的理解和区别: https://www.cnblogs.com/jiguiyan/p/11425276.html
+[1]圣杯布局和双飞翼布局的理解和区别: https://www.cnblogs.com/jiguiyan/p/11425276.html  
 [2]圣杯布局和双飞翼布局的区别与实现: https://www.jianshu.com/p/bd792382459d

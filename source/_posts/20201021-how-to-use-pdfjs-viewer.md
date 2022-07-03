@@ -122,11 +122,11 @@ server {
 
 ### References:
 
-[1] Hello World Walkthrough: https://mozilla.github.io/pdf.js/examples/
-[2] pdf.js使用方法: https://blog.csdn.net/bianliuzhu/article/details/80622215
-[3] pdf.js简易教程: https://blog.csdn.net/tang242424/article/details/82696763
-[4] PDF.js 超简单使用教程，一看就会！: https://blog.csdn.net/tangran0526/article/details/103274303?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.add_param_isCf&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.add_param_isCf
-[5] 使用pdf.js实现前端页面预览pdf文档，解决了跨域请求: https://www.cnblogs.com/-lile/p/11451131.html
-[6] Viewer options: https://github.com/mozilla/pdf.js/wiki/Viewer-options
+[1] Hello World Walkthrough: https://mozilla.github.io/pdf.js/examples/  
+[2] pdf.js使用方法: https://blog.csdn.net/bianliuzhu/article/details/80622215  
+[3] pdf.js简易教程: https://blog.csdn.net/tang242424/article/details/82696763  
+[4] PDF.js 超简单使用教程，一看就会！: https://blog.csdn.net/tangran0526/article/details/103274303?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.add_param_isCf&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.add_param_isCf  
+[5] 使用pdf.js实现前端页面预览pdf文档，解决了跨域请求: https://www.cnblogs.com/-lile/p/11451131.html  
+[6] Viewer options: https://github.com/mozilla/pdf.js/wiki/Viewer-options  
 [7] pdfjs使用指南: https://blog.csdn.net/atLuckStar/article/details/77688972
 

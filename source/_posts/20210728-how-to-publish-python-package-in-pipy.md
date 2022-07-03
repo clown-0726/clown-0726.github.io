@@ -136,5 +136,5 @@ twine upload dist/*
 这里只是讨论来如何创建一个自己的 pipy 包，并没有提及测试项目，之后会补充如何使用 tox 进行测试。
 
 ## Reference
-[1] 在Pypi上发布自己的Python包: https://www.cnblogs.com/sting2me/p/6550897.html
+[1] 在Pypi上发布自己的Python包: https://www.cnblogs.com/sting2me/p/6550897.html  
 [2] django-rest-framework: https://github.com/encode/django-rest-framework

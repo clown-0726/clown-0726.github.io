@@ -1,5 +1,6 @@
 ---
 title: 讲明白编码/解码
+date: 2020-10-23 16:20:31
 categories:
     - Coding
 tags:
@@ -162,10 +163,10 @@ b'abc'
 
 ## Reference
 
-[1] ASCII码与汉字的编码有什么区别: https://zhidao.baidu.com/question/1992697642196307547.html
-[2] 【Python】json.dumps的参数:ensure_ascii=False: https://zhuanlan.zhihu.com/p/37504880
-[3] 关于json.dumps中的ensure_ascii: https://blog.csdn.net/djskl/article/details/25225885
-[4] 彻底搞懂编码ASCII、Unicode、GBK 和 UTF8 、UTF-16、UTF-32编码方式（非常经典）: https://blog.csdn.net/lc11535/article/details/100013653
-[5] 字符编码笔记：ASCII，Unicode 和 UTF-8: https://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html
-[5] python encode ascii_python中，为何输入print（“a”.encode（“ASCii”））出来显示的是b‘a’？: https://blog.csdn.net/weixin_39628063/article/details/110696348
+[1] ASCII码与汉字的编码有什么区别: https://zhidao.baidu.com/question/1992697642196307547.html  
+[2] 【Python】json.dumps的参数:ensure_ascii=False: https://zhuanlan.zhihu.com/p/37504880  
+[3] 关于json.dumps中的ensure_ascii: https://blog.csdn.net/djskl/article/details/25225885  
+[4] 彻底搞懂编码ASCII、Unicode、GBK 和 UTF8 、UTF-16、UTF-32编码方式（非常经典）: https://blog.csdn.net/lc11535/article/details/100013653  
+[5] 字符编码笔记：ASCII，Unicode 和 UTF-8: https://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html  
+[6] python encode ascii_python中，为何输入print（“a”.encode（“ASCii”））出来显示的是b‘a’？: https://blog.csdn.net/weixin_39628063/article/details/110696348
 

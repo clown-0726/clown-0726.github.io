@@ -258,10 +258,10 @@ docker service create --name test --secret mysql_pass busybox ping 8.8.8.8
 
 ## Reference
 
-[1] 从零开始，使用Docker Swarm部署集群教程: https://blog.csdn.net/u011936655/article/details/81147315
-[2] How to Add a Health Check to Your Docker Container: https://howchoo.com/devops/how-to-add-a-health-check-to-your-docker-container
-[3] Restarting an unhealthy docker container based on healthcheck: https://stackoverflow.com/questions/47088261/restarting-an-unhealthy-docker-container-based-on-healthcheck
-[4] set time period to restart a container with docker-compose: https://serverfault.com/questions/1003348/set-time-period-to-restart-a-container-with-docker-compose
-[5] Getting started with swarm mode: https://docs.docker.com/engine/swarm/swarm-tutorial/#open-protocols-and-ports-between-the-hosts
+[1] 从零开始，使用Docker Swarm部署集群教程: https://blog.csdn.net/u011936655/article/details/81147315  
+[2] How to Add a Health Check to Your Docker Container: https://howchoo.com/devops/how-to-add-a-health-check-to-your-docker-container  
+[3] Restarting an unhealthy docker container based on healthcheck: https://stackoverflow.com/questions/47088261/restarting-an-unhealthy-docker-container-based-on-healthcheck  
+[4] set time period to restart a container with docker-compose: https://serverfault.com/questions/1003348/set-time-period-to-restart-a-container-with-docker-compose  
+[5] Getting started with swarm mode: https://docs.docker.com/engine/swarm/swarm-tutorial/#open-protocols-and-ports-between-the-hosts  
 [6] Docker Stack部署: https://blog.csdn.net/weixin_40364776/article/details/104432057
 

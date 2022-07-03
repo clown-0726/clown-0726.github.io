@@ -240,10 +240,10 @@ logger.info("some info...")
 
 ## References:
 
-[1] Django配置日志输出、logging配置最详细大全、控制台日志全部输出到文件、日志/控制台console重定向到文件: https://blog.csdn.net/haeasringnar/article/details/82053714
-[2] Logging: https://docs.djangoproject.com/en/dev/topics/logging/#topic-logging-parts-formatters
-[3] python之logging模块详解: https://blog.csdn.net/mx472756841/article/details/89921888
-[4] python logging日志模块的使用: https://blog.csdn.net/pzqingchong/article/details/79777488
-[5] Django 日志模块 logging 的配置: https://blog.csdn.net/novostary/article/details/52424116?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.channel_param
+[1] Django配置日志输出、logging配置最详细大全、控制台日志全部输出到文件、日志/控制台console重定向到文件: https://blog.csdn.net/haeasringnar/article/details/82053714  
+[2] Logging: https://docs.djangoproject.com/en/dev/topics/logging/#topic-logging-parts-formatters  
+[3] python之logging模块详解: https://blog.csdn.net/mx472756841/article/details/89921888  
+[4] python logging日志模块的使用: https://blog.csdn.net/pzqingchong/article/details/79777488  
+[5] Django 日志模块 logging 的配置: https://blog.csdn.net/novostary/article/details/52424116?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.channel_param  
 [6] python django日志的配置及使用: https://blog.csdn.net/myli_binbin/article/details/90678231
 

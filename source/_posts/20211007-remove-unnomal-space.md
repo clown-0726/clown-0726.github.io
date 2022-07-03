@@ -40,6 +40,6 @@ ucd.normalize('NFKC', msg).replace(' ', '')
 
 
 ## REFERENCE
-[1] python剔除空格\u3000: https://zhuanlan.zhihu.com/p/348461462
-[2] 三种空格unicode(\u00A0,\u0020,\u3000)表示的区别: https://www.jianshu.com/p/4317e3749a13
+[1] python剔除空格\u3000: https://zhuanlan.zhihu.com/p/348461462  
+[2] 三种空格unicode(\u00A0,\u0020,\u3000)表示的区别: https://www.jianshu.com/p/4317e3749a13  
 [3] 网页爬虫中\xa0、\u3000等字符的解释及去除: https://blog.csdn.net/pengjunlee/article/details/104674623/

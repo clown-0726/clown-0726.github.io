@@ -74,7 +74,7 @@ Find detailed documentation on: https://noricum.cloud/docs/ubuntu-gui.html
 
 
 ## Reference
-[1] Ubuntu16.04 安装Teamviewer：https://blog.csdn.net/tap880507/article/details/85601337
-[2] dpkg安装以及卸载软件：https://blog.csdn.net/u012300744/article/details/80267225
-[3] Ubuntu Desktop 20.04 LTS - GUI Gnome with VNC and RDP：https://aws.amazon.com/marketplace/pp/prodview-zbk3mpk2s6psk?ref=cns_1clkPro
+[1] Ubuntu16.04 安装Teamviewer：https://blog.csdn.net/tap880507/article/details/85601337  
+[2] dpkg安装以及卸载软件：https://blog.csdn.net/u012300744/article/details/80267225  
+[3] Ubuntu Desktop 20.04 LTS - GUI Gnome with VNC and RDP：https://aws.amazon.com/marketplace/pp/prodview-zbk3mpk2s6psk?ref=cns_1clkPro  
 [4] Documentation for Ubuntu with GUI Desktop：https://noricum.cloud/docs/ubuntu-gui.html
