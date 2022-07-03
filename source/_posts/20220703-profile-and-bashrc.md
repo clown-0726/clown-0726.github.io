@@ -186,7 +186,7 @@ chsh -s /bin/bash
 
 一般情况下，Linux 的默认 shell 是 bash，这也是 Linux 上最广泛使用的 shell。其执行优先级如下：
 
-![img](https://cdn.nlark.com/yuque/0/2022/png/29067595/1656811853308-69bd0465-ac21-48d2-a2df-ce8ef549781a.png)
+![](https://s1.ax1x.com/2022/07/03/jGZKdf.png)
 
 当系统的默认 shell 是 bash 的时候，对于 non-login shell，bash 会默认执行 .bashrc 文件。
 
