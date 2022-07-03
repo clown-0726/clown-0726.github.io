@@ -1,0 +1,141 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>profile 和 bashrc 的区别 | 曹立禄的网络日志</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 5.2.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">profile 和 bashrc 的区别</h1><a id="logo" href="/.">曹立禄的网络日志</a><p class="description">I am penny-pincher/tightwad/cheapskate javascript Vulgar man!</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/categories/Coding/"><i class="fa fa-bug"> 码农笔记</i></a><a href="/categories/Tittle-tattle/"><i class="fa fa-beer"> 杂谈</i></a><a href="/categories/Photography/"><i class="fa fa-camera"> 摄影说</i></a><a href="/tags/"><i class="fa fa-bookmark"> 标签</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">profile 和 bashrc 的区别</h1><div class="post-meta">2022-07-03<span> | </span><span class="category"><a href="/categories/Coding/">Coding</a></span></div><div class="post-content"><h2 id="什么是-shell"><a href="#什么是-shell" class="headerlink" title="什么是 shell"></a>什么是 shell</h2><h4 id="shell-简介"><a href="#shell-简介" class="headerlink" title="shell 简介"></a>shell 简介</h4><p>shell 是系统的用户界面，提供了用户与内核进行交互操作的一种接口。它接收用户输入的命令并把它送入内核去执行。</p>
+<p>shell 是一个命令解释器，它解释由用户输入的命令并且把它们送到内核。不仅如此，shell 有自己的编程语言用于对命令的编辑，它允许用户编写由 shell 命令组成的程序。shell 编程语言具有普通编程语言的很多特点，比如它也有循环结构和分支控制结构等，用这种编程语言编写的 shell 程序与其他应用程序具有同样的效果。</p>
+<p>每个 Linux 系统的用户可以拥有他自己的用户界面或 shell，用以满足他们自己专门的 shell 需要。</p>
+<h4 id="不同版本"><a href="#不同版本" class="headerlink" title="不同版本"></a>不同版本</h4><p>同 Linux 本身一样，Shell 也有多种不同的版本。主要有下列版本的 Shell：　</p>
+<ul>
+<li>(<strong>sh</strong>)Bourne Shell：是贝尔实验室开发的。</li>
+<li>(<strong>bash</strong>)BASH：是 GNU 的 Bourne Again Shell，是 GNU 操作系统上默认的 shell。</li>
+<li>(<strong>ksh</strong>)Korn Shell：是对 Bourne Shell 的发展，在大部分内容上与 Bourne Shell 兼容。</li>
+<li>(<strong>csh</strong>)C Shell：是 SUN 公司 Shell 的 BSD 版本。</li>
+<li>(<strong>zsh</strong>)Z Shell：The last shell you’ll ever need! Z 是最后一个字母，也就是终极 shell。它集成了bash、ksh 的重要特性，同时又增加了自己独有的特性。</li>
+</ul>
+<p>不同的 Shell 语言的语法有所不同，所以不能交换使用。每种 Shell 都有其特色之处，基本上，掌握其中任何一种就足够了。</p>
+<p>Bourne Again Shell，由于易用和免费，Bash 在日常工作中被广泛使用。同时，Bash 也是大多数 Linux 系统默认的 Shell。</p>
+<p>在一般情况下，人们并不区分 Bourne Shell 和 Bourne Again Shell，所以，在下面的文字中，我们可以看到 <code>#!/bin/sh</code>，它同样也可以改为 <code>#!/bin/bash</code>。</p>
+<p>由于这层原因在 Debian 中使用 .profile 文件代替 .bash_profile 文件以兼容不同的 Shell。</p>
+<p>.profile(由 Bourne Shell 和 Korn Shell 使用)和 .login(由 C Shell 使用)两个文件是 .bash_profile 的同义词，目的是为了兼容其它 Shell。</p>
+<h2 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h2><h4 id="交互式-shell-和非交互式-shell"><a href="#交互式-shell-和非交互式-shell" class="headerlink" title="交互式 shell 和非交互式 shell"></a>交互式 shell 和非交互式 shell</h4><p>交互式模式就是 shell 等待你的输入，并且执行你提交的命令。这种模式被称作交互式是因为 shell 与用户进行交互。这种模式也是大多数用户非常熟悉的：登录、执行一些命令、签退。当你签退后，shell 也终止了。</p>
+<p>shell 也可以运行在另外一种模式：非交互式模式。在这种模式下，shell 不与你进行交互，而是读取存放在文件中的命令，并且执行它们。当它读到文件的结尾，shell 也就终止了。</p>
+<h4 id="login-shell-和-non-login-shell"><a href="#login-shell-和-non-login-shell" class="headerlink" title="login shell 和 non-login shell"></a>login shell 和 non-login shell</h4><p>login shell：进入 bash 时需要完整的登陆流程的，就称为 login shell。</p>
+<p>non-login shell：取得 bash 接口的方法不需要重复登陆的举动。比如我们登陆一个有可视化界面的 Linux 服务器后，右键启动终端 Terminal，此时这个终端接口是不需要输入账号与密码，那么这个启动的 shell 输入窗口就是 non-login shell。</p>
+<h2 id="查看和修改系统默认-shell"><a href="#查看和修改系统默认-shell" class="headerlink" title="查看和修改系统默认 shell"></a>查看和修改系统默认 shell</h2><h4 id="查看系统所有的-shell"><a href="#查看系统所有的-shell" class="headerlink" title="查看系统所有的 shell"></a>查看系统所有的 shell</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 命令：</span></span><br><span class="line">cat /etc/shells</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出：</span></span><br><span class="line"><span class="comment"># List of acceptable shells for chpass(1).</span></span><br><span class="line"><span class="comment"># Ftpd will not allow users to connect who are not using</span></span><br><span class="line"><span class="comment"># one of these shells.</span></span><br><span class="line"></span><br><span class="line">/bin/bash</span><br><span class="line">/bin/csh</span><br><span class="line">/bin/ksh</span><br><span class="line">/bin/sh</span><br><span class="line">/bin/tcsh</span><br><span class="line">/bin/zsh</span><br></pre></td></tr></table></figure>
+
+<h4 id="查看当前窗口使用的shell版本"><a href="#查看当前窗口使用的shell版本" class="headerlink" title="查看当前窗口使用的shell版本"></a>查看当前窗口使用的shell版本</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 命令：</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$SHELL</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出：</span></span><br><span class="line">&gt;&gt;&gt;/bin/bash</span><br></pre></td></tr></table></figure>
+
+<h4 id="查看系统用户默认shell"><a href="#查看系统用户默认shell" class="headerlink" title="查看系统用户默认shell"></a>查看系统用户默认shell</h4><p>可以看出 root 用户用的是 sh，其他用户用的是 bash</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 命令：</span></span><br><span class="line">cat /etc/passwd | grep sh</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出：</span></span><br><span class="line">root:*:0:0:System Administrator:/var/root:/bin/sh</span><br><span class="line">_sshd:*:75:75:sshd Privilege separation:/var/empty:/usr/bin/<span class="literal">false</span></span><br><span class="line">_update_sharing:*:95:-2:Update Sharing:/var/empty:/usr/bin/<span class="literal">false</span></span><br><span class="line">_mbsetupuser:*:248:248:Setup User:/var/setup:/bin/bash</span><br></pre></td></tr></table></figure>
+
+<h4 id="修改系统默认-shell为-bash"><a href="#修改系统默认-shell为-bash" class="headerlink" title="修改系统默认 shell为 bash"></a>修改系统默认 shell为 bash</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chsh -s /bin/bash</span><br></pre></td></tr></table></figure>
+
+<h2 id="系统环境变量设定文件分类"><a href="#系统环境变量设定文件分类" class="headerlink" title="系统环境变量设定文件分类"></a>系统环境变量设定文件分类</h2><h4 id="按照是否作用于-login-shell-分类"><a href="#按照是否作用于-login-shell-分类" class="headerlink" title="按照是否作用于 login shell 分类"></a>按照是否作用于 login shell 分类</h4><p>我们可以将系统的环境变量设定文件分为 profile 和 *rc 两大类：</p>
+<ul>
+<li>profile 一般用于 login shell</li>
+<li>*rc 用于 non-login shell</li>
+</ul>
+<h4 id="按照作用范围优先级分类"><a href="#按照作用范围优先级分类" class="headerlink" title="按照作用范围优先级分类"></a>按照作用范围优先级分类</h4><p>一般在 /etc 目录下会有下面几个文件，作用范围是全局。</p>
+<p>/etc/profile</p>
+<blockquote>
+<p>此文件为系统的每个用户设置环境信息，当用户第一次登录时，该文件被执行，并从 /etc/profile.d 目录的配置文件中搜集 shell 的设置。</p>
+<p>如果你有对 /etc/profile 有修改的话必须得重启你的系统才会生效，此修改对每个用户都生效。</p>
+</blockquote>
+<p>/etc/bashrc</p>
+<blockquote>
+<p>为每一个运行 bash shell 的用户执行此文件，当 bash shell 被打开时，该文件被读取，每次用户打开一个终端时，即执行此文件。</p>
+<p>如果你想对所有的使用 bash 的用户修改某个配置并在以后打开的 bash 都生效的话可以修改这个文件，修改这个文件不用重启，重新打开一个 bash 即可生效。</p>
+<p>另外在用户家目录下会有一些当前用户的配置文件，这些文件的作用范围则是用户级别。</p>
+</blockquote>
+<p>~/.profile</p>
+<blockquote>
+<p>每个用户都可使用该文件输入专用于自己使用的 shell 信息，当用户登录时，该文件仅仅执行一次！默认情况下，他设置一些环境变量，执行用户的 .bashrc 文件。</p>
+<p>此文件类似于 /etc/profile，也是需要需要重启才会生效，/etc/profile 对所有用户生效，~/.bash_profile 只对当前用户生效。</p>
+</blockquote>
+<p>~/.bash_profile</p>
+<blockquote>
+<p> 在 Debian 中使用 .profile 文件代替 .bash_profile 文件以兼容不同的 shell。</p>
+<p>.profile(由 Bourne Shell 和 Korn Shell 使用)和 .login(由 C Shell 使用)两个文件是 .bash_profile的同义词，目的是为了兼容其它 Shell。</p>
+</blockquote>
+<p>~/.bash_login</p>
+<blockquote>
+<p> 同上</p>
+</blockquote>
+<p>~/.bash_logout</p>
+<blockquote>
+<p> .bash_logout 在退出 shell 时被读取。所以我们可把一些清理工作的命令放到这文件中。</p>
+</blockquote>
+<p>~/.bashrc</p>
+<blockquote>
+<p> 该文件包含专用于你的 bash shell 的 bash 信息，当登录时以及每次打开新的 shell 时，该文件被读取。（每个用户都有一个 .bashrc 文件，在用户目录下）</p>
+<p>此文件类似于 /etc/bashrc，不需要重启生效，重新打开一个 bash 即可生效，/etc/bashrc 对所有用户新打开的 bash 都生效，但 ~/.bashrc 只对当前用户新打开的 bash 生效。</p>
+</blockquote>
+<p>~/.zprofile</p>
+<blockquote>
+<p> .zprofile 是 .zlogin 的替代品，.zlogin 则在 login shell 的时候读取，比如系统启动的时候会读取此文件。</p>
+</blockquote>
+<p>~/.zlogin</p>
+<blockquote>
+<p>同上</p>
+</blockquote>
+<p>~/.zlogout</p>
+<blockquote>
+<p> .zlogout 退出终端的时候读取，用于做一些清理工作。</p>
+</blockquote>
+<p>~/.zshrc</p>
+<blockquote>
+<p> 该文件包含专用于你的 zsh shell 的信息，当登录时以及每次打开新的 shell 时，该文件被读取。</p>
+</blockquote>
+<h4 id="按照是否依赖于具体的-shell-分类"><a href="#按照是否依赖于具体的-shell-分类" class="headerlink" title="按照是否依赖于具体的 shell 分类"></a>按照是否依赖于具体的 shell 分类</h4><p>另外，我们可以认为 /etc/profile 和 .profile 是系统特定的环境变量设定文件，不依赖于具体的 shell，而其他的配置文件则要依据具体的 shell，这取决于你使用哪个作为系统默认的 shell。</p>
+<ul>
+<li>.bash_profile .bash_login .bashrc 依赖于 bash</li>
+<li>.zprofile .zshrc 依赖于 zsh</li>
+</ul>
+<h2 id="不同-shell-的执行优先级"><a href="#不同-shell-的执行优先级" class="headerlink" title="不同 shell 的执行优先级"></a>不同 shell 的执行优先级</h2><h4 id="bash-的配置文件执行优先级"><a href="#bash-的配置文件执行优先级" class="headerlink" title="bash 的配置文件执行优先级"></a>bash 的配置文件执行优先级</h4><p>一般情况下，Linux 的默认 shell 是 bash，这也是 Linux 上最广泛使用的 shell。其执行优先级如下：</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/29067595/1656811853308-69bd0465-ac21-48d2-a2df-ce8ef549781a.png" alt="img"></p>
+<p>当系统的默认 shell 是 bash 的时候，对于 non-login shell，bash 会默认执行 .bashrc 文件。</p>
+<p>对于 login shell，bash 会默认执行 .profile 文件，但是当系统有 .bash_profile 或 .bash_login 存在的时候则不会执行 .profile。</p>
+<p><strong>在刚登录 Linux 时：</strong></p>
+<p>首先启动 /etc/profile 文件；</p>
+<p>然后再启动用户目录下的 <del>/.bash_profile、 ~/.bash_login 或 ~/.profile 文件中的其中一个，执行的顺序为：</del>/.bash_profile、 ~/.bash_login、 ~/.profile。</p>
+<p><strong>开始执行用户的 bash 设置：</strong></p>
+<p>如果 ~/.bash_profile 文件存在的话，一般会以下面的方式执行用户的 ~/.bashrc 文件。</p>
+<p>在 ~/.bash_profile 文件中一般会有下面的代码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># if running bash</span></span><br><span class="line"><span class="keyword">if</span> [ -n <span class="string">&quot;<span class="variable">$BASH_VERSION</span>&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">    <span class="comment"># include .bashrc if it exists</span></span><br><span class="line">    <span class="keyword">if</span> [ -f <span class="string">&quot;<span class="variable">$HOME</span>/.bashrc&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">    . <span class="string">&quot;<span class="variable">$HOME</span>/.bashrc&quot;</span></span><br><span class="line">    <span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
+
+<p>同样 ~/.bashrc 中，一般还会在文件的前面有以下代码，来执行 /etc/bashrc</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ -f /etc/bashrc ] ; <span class="keyword">then</span></span><br><span class="line">　. /etc/bashrc</span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p><del>/.bash_profile 是交互式、login 方式进入 bash 运行的。</del>/.bashrc 是交互式 non-login 方式进入 bash 运行的。通常二者设置大致相同，所以通常前者会调用后者。</p>
+<p>上面这三个文件是 bash shell 的用户环境配置文件，位于用户的主目录下。其中 .bash_profile 是最重要的一个配置文件，它在用户每次登录系统时被读取，里面的所有命令都会被 bash 执行。</p>
+<p>.bashrc 文件会在 bash shell 调用另一个 bash shell 时读取，也就是在 shell 中再键入 bash 命令启动一个新 shell 时就会去读该文件。这样可有效分离登录和子 shell 所需的环境。但一般来说都会在 .bash_profile 里调用 .bashrc 脚本以便统一配置用户环境。</p>
+<h4 id="zsh-的配置文件查找优先级"><a href="#zsh-的配置文件查找优先级" class="headerlink" title="zsh 的配置文件查找优先级"></a>zsh 的配置文件查找优先级</h4><p>mac 系统下，我们会安装 zsh 来代替系统默认的 bash，zsh 在用户体验方面有着更优秀的特性，比如色彩高亮，命令提示，智能补全，快速跳转等。</p>
+<p>当系统的默认 shell 是 zsh 的时候：</p>
+<ul>
+<li>首先当系统启动的时候会执行 /etc/.profile 全局的配置文件</li>
+<li>之后会在用户级别执行 .zprofile，.zshrc 两个文件</li>
+</ul>
+<p>当我们安装了 zsh 之后，一般会安装 <a target="_blank" rel="noopener" href="https://ohmyz.sh/">Oh my zsh</a> 这个扩展工具集，来丰富我们的日常操作。另外，可以参考下面的文章配置比较流行的 agnoster 主题。</p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44294408/article/details/124742002">https://blog.csdn.net/weixin_44294408/article/details/124742002</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_31983133/article/details/112610463">https://blog.csdn.net/weixin_31983133/article/details/112610463</a></p>
+</li>
+</ul>
+<h4 id="执行优先级场景"><a href="#执行优先级场景" class="headerlink" title="执行优先级场景"></a>执行优先级场景</h4><ol>
+<li><p>图形模式登录时，顺序读取：/etc/profile 和 ~/.profile</p>
+</li>
+<li><p>图形模式登录后，打开终端时，顺序读取：/etc/.bashrc 和 ~/.bashrc</p>
+</li>
+<li><p>文本模式登录时，顺序读取：/etc/.bashrc，/etc/profile 和 ~/.bash_profile</p>
+</li>
+<li><p>从其它用户 su 到该用户，则分两种情况：</p>
+<p>（1）如果带 <code>-l</code> 参数（或 <code>-</code> 参数，<code>-login</code> 参数），如：<code>su -l username</code>，则 bash 是 login 的，它将顺序读取以下配置文件：/etc/.bashrc，/etc/profile 和 ~/.bash_profile。</p>
+<p>（2）如果没有带 <code>-l</code> 参数，则 bash 是 non-login 的，它将顺序读取：/etc/.bashrc 和 ~/.bashrc</p>
+</li>
+<li><p>注销时，或退出 su 登录的用户，如果是 longin 方式，那么 bash 会读取：~/.bash_logout</p>
+</li>
+<li><p>执行自定义的 shell 文件时，若使用 <code>bash -l a.sh</code> 的方式，则 bash 会读取行：/etc/profile 和~/.bash_profile，若使用其它方式，如 <code>bash a.sh</code>，<code>./a.sh</code>，<code>sh a.sh</code>（这个不属于 bash shell），则不会读取上面的任何文件。</p>
+</li>
+</ol>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>[1] profile和bashrc的区别 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/Zzbj/p/15419982.html">https://www.cnblogs.com/Zzbj/p/15419982.html</a><br>[2] bashrc与profile的区别 <a target="_blank" rel="noopener" href="https://blog.csdn.net/heybeaman/article/details/87289405">https://blog.csdn.net/heybeaman/article/details/87289405</a><br>[3] Linux下profile和bashrc四种的区别 <a target="_blank" rel="noopener" href="https://blog.csdn.net/ishulei/article/details/108237502">https://blog.csdn.net/ishulei/article/details/108237502</a><br>[4] Linux中profile、bashrc、<del>/.bash_profile、</del>/.bashrc、~/.bash_profile之间的区别和联系以及执行顺序 <a target="_blank" rel="noopener" href="https://kernel.blog.csdn.net/article/details/45064705">https://kernel.blog.csdn.net/article/details/45064705</a></p>
+</div><div class="tags"><a href="/tags/%E9%9A%8F%E7%AC%94/"><i class="fa fa-tag"></i>随笔</a></div><div class="post-nav"><a class="next" href="/2022/05/10/20220510-how-https-protect-data-transfer/">https 是如何保护数据传输的</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="http://example.com"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Coding/">Coding</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Reading/">Reading</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tittle-tattle/">Tittle-tattle</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/WEB/" style="font-size: 15px;">WEB</a> <a href="/tags/Javascript/" style="font-size: 15px;">Javascript</a> <a href="/tags/%E5%A5%BD%E6%96%87/" style="font-size: 15px;">好文</a> <a href="/tags/DB/" style="font-size: 15px;">DB</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 15px;">后端</a> <a href="/tags/Python/" style="font-size: 15px;">Python</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 15px;">随笔</a> <a href="/tags/%E8%AF%BB%E4%B9%A6/" style="font-size: 15px;">读书</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 15px;">杂谈</a> <a href="/tags/AWS/" style="font-size: 15px;">AWS</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2022/07/03/20220703-profile-and-bashrc/">profile 和 bashrc 的区别</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/05/10/20220510-how-https-protect-data-transfer/">https 是如何保护数据传输的</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/04/08/20220408-resolve-es-fvh-not-highlight-data-type/">解决 Elastic Search 的 Fast Vector Highlighting (FVH) 策略无法高亮 nested 数据类型</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/27/20220327-esLint-with-prettier-standardize-frontend-code/">ESLint 和 Prettier 工程化前端代码</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/10/20220310-use-office-365-smtp-send-enterprise-email/">使用 office 365 SMTP 发送企业邮件</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/02/01/20220201-django-drf-global_exception-handle-2/">Django 与 DRF 结合的全局异常处理方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/11/25/20211125-jingti-ruanjian-fuzadu-kunju/">读后：警惕软件复杂度困局</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/14/20211014-django-drf-global-exception-handle/">Django 和 DRF(Django Rest Framework) 下的全局异常处理</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/07/20211007-remove-unnomal-space/">去掉特殊空格(\t \v \f \xa0 \u0020 \u3000 \u00A0 &nbsp;)</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/09/15/20210915-my-vscode-config-note/">我的 vscode 配置笔记</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="/archives/" title="文章归档" target="_blank">文章归档</a><ul></ul><a href="https://github.com/clown-0726?tab=repositories" title="GITHUB" target="_blank">GITHUB</a><ul></ul><a href="https://www.orbitfin.ai/" title="Orbit Financial Technology" target="_blank">Orbit Financial Technology</a><ul></ul><a href="http://www.ruanyifeng.com/home.html" title="阮一峰" target="_blank">阮一峰</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2022 <a href="/." rel="nofollow">曹立禄的网络日志.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="http://beian.miit.gov.cn/"> 辽ICP备2020013446号</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
