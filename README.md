@@ -1,47 +1,38 @@
-### Aliyun path
-- 47.105.63.161
+## 文章地址
 
-### Theme Refer
-- https://github.com/tufu9441/maupassant-hexo
+- https://github.com/clown-0726/clown-0726.github.io/tree/source/source/_posts
 
-### Start project
-- hexo server
-- hexo generate & hexo deploy
+## 文章目录
 
-### ENV
-- node 12.x
+#### 2020
 
-### Setting up
-##### 整理自己的文章分类
-- https://www.cnblogs.com/hankleo/p/11606224.html
-- https://github.com/iissnan/hexo-theme-next/wiki/%E5%88%9B%E5%BB%BA%E5%88%86%E7%B1%BB%E9%A1%B5%E9%9D%A2
+- [2020-10-21] 如何使用 pdf.js 在线显示 pdf 文档
+- [2020-10-22] 好文推荐 101
+- [2020-10-23] 讲明白编码/解码
+- [2020-10-26] 读吴军博士 — 见识
+- [2020-11-07] Python logging 模块的使用
+- [2020-11-10] 记录从头搭建 Docker Swarm 集群的过程
+- [2020-11-22] 入门 PHP
+- [2020-11-28] 三年技术学的一点感想
+- [2020-11-28] 撸一个圣杯布局和双飞翼布局
+- [2020-12-21] 风沙星辰摘录
 
-##### 部署博客到阿里云oss
-- https://www.jianshu.com/p/99952652b2dd (推荐)
-- http://zengwu.com.cn/p/dd7e8a7b.html
+#### 2021
 
-### 文章分类
-- 码农笔记     Coding
-- 读书笔记     Reading
-- 摄影说       Photography
-- 杂谈         Tittle-tattle
-- Snippet     Snippet
+- [2021-05-22] Lightsail 随笔记录
+- [2021-07-04] 《愿你历尽千帆 归来仍是少年》 读后
+- [2021-07-06] 重学 python 基础笔记
+- [2021-07-13] Wordpress 拾遗笔记
+- [2021-07-17] 代码的坏味道笔记
+- [2021-07-28] 如何在 pypi 上发布自己的 python 包
+- [2021-07-31] 很喜欢大兵写的这些句子
+- [2021-08-09] AWS 配置 Ubuntu 可视化界面
+- [2021-08-11] linux 源码包安装拾遗
+- [2021-08-15] HTTP 下的前后端交互
+- [2021-08-30] 如何整理积重难返的 django db migrations 文件
+- [2021-09-15] 我的 vscode 配置笔记
+- [2021-10-07] 去掉特殊空格(\t \v \f \xa0 \u0020 \u3000 \u00A0 &nbsp;)
+- [2021-10-14] Django 和 DRF(Django Rest Framework) 下的全局异常处理
+- [2021-11-25] 读后：警惕软件复杂度困局
 
-### 文章标签
-- 好文
-- 读书
-- 摄影
-- WEB
-- 后端
-- Python
-- Javascript
-- DB
-- AWS
-- 杂谈
-- 随笔
-- VUE
-- React
-- Snippet
-
-### Others
-- You can control the abstract of a post shown at index, by either filling a description: item in front-matter of the post.md, or just inserting a <!--more--> before your hidden content.
+#### 2022
