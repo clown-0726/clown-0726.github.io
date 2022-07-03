@@ -42,3 +42,4 @@
 - [2022-03-27] ESLint 和 Prettier 工程化前端代码
 - [2022-04-08] 解决 Elastic Search 的 Fast Vector Highlighting (FVH) 策略无法高亮 nested 数据类型
 - [2022-05-10] https 是如何保护数据传输的
+- [2022-07-03] profile 和 bashrc 的区别
