@@ -1,5 +1,4 @@
 ---
-
 title: profile 和 bashrc 的区别
 date: 2022-07-03 21:45:01
 categories: 
