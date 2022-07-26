@@ -14,11 +14,12 @@
 <p><img src="https://img-blog.csdnimg.cn/img_convert/08f9a552d55eb47b2322a8e0ba2ca33e.png"></p>
 <h2 id="https-的两种数据保护策略"><a href="#https-的两种数据保护策略" class="headerlink" title="https 的两种数据保护策略"></a>https 的两种数据保护策略</h2><p>我们知道 https 对数据的保护主要有两种策略，一种是数据加密传输，另一种是请求身份认证。下面的图包含了两种策略的具体处理过程，我们将针对两种保护策略分别阐述。</p>
 <p><img src="https://img-blog.csdnimg.cn/img_convert/f2fc3a85eecf1060fb6375a999cda92e.png"></p>
-<h4 id="如何对传输内容进行加密"><a href="#如何对传输内容进行加密" class="headerlink" title="如何对传输内容进行加密"></a>如何对传输内容进行加密</h4><p>上面我们介绍了对称加密和非对称加密，对于两种加密手段来说，对称加密的执行效率是高于非对称加密的。</p>
-<p>https 在建立连接的过程中，一共发起两次请求，非别使用了对称加密和非对称加密。</p>
-<p>我们先忽略身份验证的过程，也就是 CA 证书验证的过程来看上面的八个步骤。</p>
+<h4 id="如何对传输内容进行加密"><a href="#如何对传输内容进行加密" class="headerlink" title="如何对传输内容进行加密"></a>如何对传输内容进行加密</h4><p>我们知道 https 其实就是启用了 SSL 的 http 协议，对于 SSL(Secure Sockets Layer) ，从网络的角度看，其实是位于应用层和传输层之间的安全套接字。如下图所示：<br><img src="https://img-blog.csdnimg.cn/9b0ce677c1c44734aea2f63c6183d459.png#pic_center" alt="在这里插入图片描述"></p>
+<p>上面我们介绍了对称加密和非对称加密，对于两种加密手段来说，对称加密的执行效率是高于非对称加密的。</p>
+<p>https 在建立连接的过程中，一共发起两次请求，分别使用了对称加密和非对称加密。</p>
+<p>我们先忽略身份验证的过程（也就是 CA 证书验证的过程）来看上面的八个步骤。</p>
 <ol>
-<li><p>客户端发送一个https的请求到服务端</p>
+<li><p>客户端发送一个 https 的请求到服务端</p>
 </li>
 <li><p>服务端准备公钥和私钥</p>
 </li>
