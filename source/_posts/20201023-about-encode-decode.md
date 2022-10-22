@@ -219,4 +219,7 @@ b'abc'
 [4] 彻底搞懂编码ASCII、Unicode、GBK 和 UTF8 、UTF-16、UTF-32编码方式（非常经典）: https://blog.csdn.net/lc11535/article/details/100013653  
 [5] 字符编码笔记：ASCII，Unicode 和 UTF-8: https://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html  
 [6] python encode ascii_python中，为何输入print（“a”.encode（“ASCii”））出来显示的是b‘a’？: https://blog.csdn.net/weixin_39628063/article/details/110696348
+[7] 一文彻底搞懂Unicode编码问题: https://zhuanlan.zhihu.com/p/370601172
+[8] Unicode 是不是只有两个字节，为什么能表示超过 65536 个字符: http://www.wjhsh.net/crazylqy-p-10482097.html
+[9] python中的编码和解码及\x和\u问题: http://www.45fan.com/article.php?aid=1CZUme3YrG1N9A2B
 
