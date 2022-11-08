@@ -11,7 +11,7 @@ tags:
 
 ## 关于
 
-docker 默认推荐将运行程序的日志都输出到标准输出（STDOUT），同时，docker 支持不同的 [log driver](https://docs.docker.com/config/containers/logging/awslogs/#awslogs-region) 可以将日志发送到不同的日志中心。
+docker 默认推荐将程序运行的日志都输出到标准输出（STDOUT），同时，docker 支持不同的 [log driver](https://docs.docker.com/config/containers/logging/awslogs/#awslogs-region) 可以将日志发送到不同的日志中心。
 
 这篇文章是关于如何配置 docker 容器并其应用程序日志发送到 AWS CloudWatch。发送成功的日志可以从 AWS 管理控制台进行检索。
 
@@ -46,21 +46,21 @@ docker 的版本为 `Docker version 20.10.21, build baeda1f`。
 
 #### 创建 AWS Credentials
 
-现在我们已经准备好了示例应用程序，我们可以将 docker 日志推送到 AWS CloudWatch。为此，我们需要 AWS 帐户的访问凭据，我们希望我们的日志可用。我们将在 AWS 创建一个具有CloudWatch 访问权限的一个单独的帐户，并将其与 docker 守护程序绑定在一起使用。步骤如下：
-- 创建 CloudWatch 的 IAM 策略
-- 使用该策略创建 IAM 组
-- 创建 IAM 用户并将其添加到此组
+现在我们已经准备好了示例应用程序，我们可以将 docker 日志推送到 AWS CloudWatch。为此，我们需要 AWS 帐户的访问凭据以便我们的日志可在 AWS 进行查看。我们将在 AWS 创建一个具有 CloudWatch 访问权限的一个单独的帐户，并将其与 docker daemon（docker 的守护进程）绑定在一起使用。步骤如下：
+- 创建 CloudWatch 的 IAM policy
+- 使用该 policy 创建 IAM group
+- 创建 IAM user 并将其添加到此 group
 
-##### 创建 IAM 策略
+##### 创建 IAM policy
 
 - 从 AWS 控制台进入 IAM 控制台
-- 选择“策略”，并点击“创建策略”
-- 在“创建策略”的窗口选择
+- 选择“Policies”，并点击“Create Policy”
+- 在“Create Policy”的窗口选择
   - Service = CloudWatch Logs
   - Actions = CreateLogStream, GetLogRecord, DescribeLogGroups, DescribeLogStreams, GetLogEvents, CreateLogGroup, PutLogEvents
   - Resources = All
 
-选择所需权限后，策略摘要如下：
+选择所需权限后，Policies 摘要如下：
 ```json
 {
     "Version": "2012-10-17",
@@ -84,11 +84,11 @@ docker 的版本为 `Docker version 20.10.21, build baeda1f`。
 ```
 
 ##### 创建 IAM 组和用户
-- 在 IAM 控制台创建一个新的 IAM 组，并且给一个合适的名字比如“docker-logs-group”
-- 将上面创建的策略赋给刚创建的 IAM 组
-- 创建一个新的 IAM 用户（勾选 Access key - Programmatic access），并且给一个合适的名字比如“docker-logs-user”
+- 在 IAM 控制台创建一个新的 IAM group，并且给一个合适的名字比如“docker-logs-group”
+- 将上面创建的 policy 赋给刚创建的 IAM group
+- 创建一个新的 IAM user（勾选 Access key - Programmatic access），并且给一个合适的名字比如“docker-logs-user”
 - 保存 access key ID 和 secret access key
-- 将刚创建的用户添加到 IAM 组
+- 将刚创建的 user 添加到 IAM group
 
 #### 为 docker daemon 配置 AWS credentials
 
@@ -132,7 +132,11 @@ sudo docker run \
 
 #### 在 CloudWatch 上查看输出日志
 
-xxx
+在 CloudWatch 的控制台选择 `Log Groups` 然后选择我们上面创建的日志组 `myLogGroup`。
+
+[![xzkXl9.png](https://s1.ax1x.com/2022/11/08/xzkXl9.png)](https://imgse.com/i/xzkXl9)
+
+值得注意的是，在日志组中，默认的 log streams 的名就是 docker container 运行时的 ID，以下是运行测试的三个退出的 container。
 
 ```
 CONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS                      PORTS     NAMES
@@ -143,7 +147,7 @@ e44d0076e764   alpine:latest   "echo /home/ubuntu/m…"   35 seconds ago   Exite
 
 ## 踩坑日志
 #### docker 无法用 systemctl 重启
-由于我们是通过 systemctl 来传递 AWS credentails 到 docker daemon 的，因此 systemctl 必须能管理 docker，但是通过命令 `sudo systemctl restart docker` 重启 docker，但是一直报错：
+由于我们是通过 systemctl 来传递 AWS credentials 到 docker daemon 的，因此 systemctl 必须能管理 docker，但是通过命令 `sudo systemctl restart docker` 重启 docker，但是一直报错：
 ```
 Failed to restart docker.service: Unit docker.service not found.
 ```
@@ -152,8 +156,8 @@ Failed to restart docker.service: Unit docker.service not found.
 
 可以通过命令 `snap list` 查看 snap 安装的包，如果存在则卸载掉，然后安装官方的安装包即可。
 
-#### docker 无法找到 AWS credentails
-如果 docker daemon 无法找到AWS credentails，那么它将生成一条错误消息，如下所示：
+#### docker 无法找到 AWS credentials
+如果 docker daemon 无法找到AWS credentials，那么它将生成一条错误消息，如下所示：
 ```
 docker: Error response from daemon: failed to initialize logging driver: failed to create Cloudwatch log stream: NoCredentialProviders: no valid providers in chain. Deprecated.
         For verbose messaging see aws.Config.CredentialsChainVerboseErrors.
